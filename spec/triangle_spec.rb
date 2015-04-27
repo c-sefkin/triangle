@@ -7,6 +7,10 @@ describe(Triangle) do
     triangle_test = Triangle.new(3, 3, 3)
     expect(triangle_test.triangle?()).to(eq('equalateral'))
   end
+  it('determine if scalene triangle') do
+    triangle_test = Triangle.new(2, 3, 4)
+    expect(triangle_test.triangle?()).to(eq('scalene'))
+  end
     it('determine if isosceles triangle') do
     triangle_test = Triangle.new(2, 3, 3)
     expect(triangle_test.triangle?()).to(eq('isosceles'))
